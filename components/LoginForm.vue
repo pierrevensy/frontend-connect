@@ -55,45 +55,34 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import { SAVE } from '~/store/actions.type'
+import { FETCH_ME, LOGIN } from '~/store/actions.type'
 
 export default {
-  props: {
-    entity: {
-      type: Object,
-      default: () => ({})
-    }
-  },
   data () {
     return {
+      form: {},
       errors: {},
       saving: false,
       snackbar: false,
-      snackbarData: {},
-      form: { ...this.entity },
-      backLink: this.entity.id ? `/group/groups/${this.entity.id}` : '/group?tab=groups'
+      snackbarData: {}
     }
   },
   computed: {
+    ...mapGetters('user/user', ['user']),
     ...mapGetters('auth', ['authenticated'])
   },
   methods: {
     submit (e, saveAndNew) {
       this.saving = true
       this.$store
-        .dispatch(`group/group/${SAVE}`, this.form)
-        .then((v) => {
+        .dispatch(`auth/${LOGIN}`, this.form)
+        .then(async (v) => {
+          await this.$store.dispatch(`user/user/${FETCH_ME}`)
           this.resetForm()
-          this.showSnackbar('success', this.$t('item_saved_message'))
-          if (!saveAndNew) { this.$router.push(`/group/groups/${v.id}`) }
+          // this.$router.redirect()
         })
         .catch((e) => { this.errors = e.response.data.errors || {} })
         .finally(() => { this.saving = false })
-    },
-    showSnackbar (color, message) {
-      this.snackbar = true
-      this.snackbarData.color = color
-      this.snackbarData.message = message
     },
     resetForm () {
       this.form = {}

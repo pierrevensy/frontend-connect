@@ -1,6 +1,7 @@
 export default function ({ store, app: { $axios, $cookies }, redirect, error }) {
-  // Set token if exists
-
+  // Default value
+  $axios.defaults.withCredentials = true
+  console.log($cookies.get('XSRF-TOKEN', { parseJSON: false }))
   // Error handler
   $axios.onError((err) => { // Set error interceptors
     const code = parseInt((err.response || {}).status)

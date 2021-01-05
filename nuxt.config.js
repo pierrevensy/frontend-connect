@@ -47,7 +47,9 @@ export default {
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
     // https://www.npmjs.com/package/@nuxtjs/moment
-    '@nuxtjs/moment'
+    '@nuxtjs/moment',
+    // https://www.npmjs.com/package/cookie-universal-nuxt
+    'cookie-universal-nuxt'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)

@@ -1,9 +1,8 @@
 import {
-  SET_TOKEN,
   SET_AUTHENTICATED
 } from './mutations.type'
 import {
-  LOGOUT
+  LOGIN
 } from './actions.type'
 
 // Initial state
@@ -17,19 +16,15 @@ export const state = () => ({ ...initialState })
 
 // Actions
 export const actions = {
-  [LOGOUT] ({ commit }) {
-    commit(SET_TOKEN, null)
-    this.$cookies.remove('token')
-    this.$axios.setToken(null, 'Bearer')
-    commit(SET_AUTHENTICATED, false)
+  async [LOGIN] (context, payload) {
+    const res = await this.$axios.post('/login', payload)
+    context.commit(SET_AUTHENTICATED, true)
+    return res
   }
 }
 
 // Mutations
 export const mutations = {
-  [SET_TOKEN] (state, v) {
-    state.token = v
-  },
   [SET_AUTHENTICATED] (state, v) {
     state.authenticated = v
   }
@@ -37,9 +32,6 @@ export const mutations = {
 
 // Getters
 const getters = {
-  token: (state) => {
-    return state.token
-  },
   authenticated: (state) => {
     return state.authenticated
   }
