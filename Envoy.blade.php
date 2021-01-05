@@ -12,7 +12,7 @@
 @task('remote_deploy', ['on' => ['remote']])
     cd ~/auth.davidiantoday.org
     git pull origin main
-    npm install
-    npm run build
-    pm2 start npm -- start
+    yarn install
+    yarn build
+    pm2 start yarn -- start
 @endtask
