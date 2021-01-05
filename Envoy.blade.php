@@ -14,5 +14,5 @@
     git pull origin main
     yarn install
     yarn build
-    pm2 start yarn -- start
+    pm2 start yarn --name davidian_auth -- start
 @endtask
