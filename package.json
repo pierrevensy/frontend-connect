@@ -4,7 +4,7 @@
   "private": true,
   "config": {
     "nuxt": {
-      "port": "3300"
+      "port": "4444"
     }
   },
   "scripts": {
