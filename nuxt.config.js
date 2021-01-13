@@ -129,7 +129,10 @@ export default {
   // Runtime Configuration (https://nuxtjs.org/blog/moving-from-nuxtjs-dotenv-to-runtime-config)
   publicRuntimeConfig: {
     apiURL: process.env.API_URL,
-    baseURL: process.env.BASE_URL
+    baseURL: process.env.BASE_URL,
+    adminURL: process.env.ADMIN_URL,
+    privateURL: process.env.PRIVATE_URL,
+    frontendURL: process.env.FRONTEND_URL
   },
   privateRuntimeConfig: {},
 

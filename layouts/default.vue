@@ -12,6 +12,7 @@ export default {
     return {
       dark: false
     }
-  }
+  },
+  middleware: ['guest']
 }
 </script>

@@ -7,8 +7,7 @@ import {
 
 // Initial state
 const initialState = {
-  token: null,
-  authenticated: true
+  authenticated: false
 }
 
 // States
@@ -17,8 +16,10 @@ export const state = () => ({ ...initialState })
 // Actions
 export const actions = {
   async [LOGIN] (context, payload) {
-    const res = await this.$axios.post('/login', payload)
+    const res = await this.$axios.$post('/token', { ...payload, device_name: 'frontend' })
+    this.$axios.setToken(res, 'Bearer')
     context.commit(SET_AUTHENTICATED, true)
+    this.$cookies.set('token', res, { sameSite: 'Lax', path: '/' })
     return res
   }
 }

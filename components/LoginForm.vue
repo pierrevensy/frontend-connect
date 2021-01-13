@@ -79,7 +79,7 @@ export default {
         .then(async (v) => {
           await this.$store.dispatch(`user/user/${FETCH_ME}`)
           this.resetForm()
-          // this.$router.redirect()
+          if (window) { window.location.replace(this.user.is_admin ? this.$config.adminURL : this.$config.privateURL) }
         })
         .catch((e) => { this.errors = e.response.data.errors || {} })
         .finally(() => { this.saving = false })
