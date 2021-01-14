@@ -1,4 +1,4 @@
-@servers(['remote' => 'davidian', 'localhost' => '127.0.0.1'])
+@servers(['remote' => 'davidian2', 'localhost' => '127.0.0.1'])
 
 @story('deploy')
     git_push
@@ -10,9 +10,7 @@
 @endtask
 
 @task('remote_deploy', ['on' => ['remote']])
-    cd ~/auth.davidiantoday.org
+    cd ~/www/auth.davidiantoday.org
     git pull origin main
-    yarn install
-    yarn build
     docker-compose up --build -d
 @endtask
