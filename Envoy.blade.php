@@ -14,5 +14,5 @@
     git pull origin main
     yarn install
     yarn build
-    pm2 start
+    docker-compose up --build -d
 @endtask

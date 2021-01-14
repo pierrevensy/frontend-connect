@@ -1,0 +1,9 @@
+services:
+  nuxt:
+    restart: always
+    container_name: davidian-connect-nuxt-app
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - "3300:3000"

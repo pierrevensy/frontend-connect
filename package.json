@@ -2,11 +2,6 @@
   "name": "connect",
   "version": "1.0.0",
   "private": true,
-  "config": {
-    "nuxt": {
-      "port": "3300"
-    }
-  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
