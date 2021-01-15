@@ -134,6 +134,7 @@ export default {
     baseURL: process.env.BASE_URL,
     adminURL: process.env.ADMIN_URL,
     privateURL: process.env.PRIVATE_URL,
+    domainName: process.env.DOMAIN_NAME,
     frontendURL: process.env.FRONTEND_URL
   },
   privateRuntimeConfig: {},

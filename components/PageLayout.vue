@@ -5,7 +5,7 @@
         <v-card class="mt-12">
           <header class="d-flex py-4 px-6 align-center black">
             <h2 class="white--text text-capitalize font-weight-bold" v-text="title" />
-            <a :href="homeLink" class="brand-wrapper d-flex align-center justify-center rounded-circle ml-auto">
+            <a :href="$config.frontendURL" class="brand-wrapper d-flex align-center justify-center rounded-circle ml-auto">
               <img src="~/static/brand.png" alt="Brand">
             </a>
           </header>
@@ -24,11 +24,6 @@ export default {
     title: {
       type: String,
       default: ''
-    }
-  },
-  data () {
-    return {
-      homeLink: ''
     }
   }
 }
