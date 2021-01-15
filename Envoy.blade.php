@@ -10,7 +10,7 @@
 @endtask
 
 @task('remote_deploy', ['on' => ['remote']])
-    cd ~/auth.davidiantoday.org
+    cd ~/www/auth.davidiantoday.org
     git pull origin main
     yarn install
     yarn build
