@@ -3,7 +3,9 @@
     <form class="mx-4" @submit.prevent="submit">
       <v-row class="mt-4">
         <v-col cols="12">
-          <v-alert color="info white--text" class="text-center" dense v-text="$t('verify_email_desc_1')" />
+          <v-alert color="info white--text" class="text-center" dense>
+            {{ $t('verify_email_desc_1') }}
+          </v-alert>
           <p class="text-disable text-center" v-text="$t('verify_email_desc_2')" />
           <p class="text-disable text-center mb-0" v-text="$t('verify_email_desc_3')" />
         </v-col>
@@ -18,13 +20,15 @@
             depressed
           >
             <template v-slot:loader>
-              <span>{{ $t('send_dots') }}</span>
+              <span v-text="$t('send_dots')" />
             </template>
             {{ $t('click_request_another') }}
           </v-btn>
         </v-col>
         <v-col cols="12" class="text-right">
-          <v-btn to="/" nuxt text class="text-capitalize blue--text" v-text="$t('back_to_login')" />
+          <v-btn to="/" nuxt text class="text-capitalize blue--text">
+            {{ $t('back_to_login') }}
+          </v-btn>
         </v-col>
       </v-row>
       <v-snackbar v-model="snackbar" app top right :color="snackbarData.color">

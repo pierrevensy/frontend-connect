@@ -32,7 +32,9 @@
           </v-btn>
         </v-col>
         <v-col cols="12" class="text-right">
-          <v-btn to="/" nuxt text class="text-capitalize blue--text" v-text="$t('back_to_login')" />
+          <v-btn to="/" nuxt text class="text-capitalize blue--text">
+            {{ $t('back_to_login') }}
+          </v-btn>
         </v-col>
       </v-row>
       <v-snackbar v-model="snackbar" app top right :color="snackbarData.color">

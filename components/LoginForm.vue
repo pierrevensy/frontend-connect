@@ -43,7 +43,9 @@
           </v-btn>
         </v-col>
         <v-col cols="12" class="text-right">
-          <v-btn to="/forgot" nuxt text class="text-capitalize blue--text" v-text="$t('forgot_password')" />
+          <v-btn to="/forgot" nuxt text class="text-capitalize blue--text">
+            {{ $t('forgot_password') }}
+          </v-btn>
         </v-col>
       </v-row>
       <v-snackbar v-model="snackbar" app top right :color="snackbarData.color">
