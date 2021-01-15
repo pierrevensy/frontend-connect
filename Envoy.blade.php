@@ -10,7 +10,9 @@
 @endtask
 
 @task('remote_deploy', ['on' => ['remote']])
-    cd ~/www/auth.davidiantoday.org
+    cd ~/auth.davidiantoday.org
     git pull origin main
-    docker-compose up --build -d
+    yarn install
+    yarn build
+    pm2 start
 @endtask
