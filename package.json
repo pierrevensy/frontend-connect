@@ -21,6 +21,7 @@
     "lodash": "^4.17.20",
     "nuxt": "^2.14.6",
     "nuxt-i18n": "^6.15.4",
+    "nuxt-winston-log": "^1.2.0",
     "vee-validate": "^3.4.5",
     "vue-api-query": "^1.8.2",
     "vue-timeago": "^5.1.2"

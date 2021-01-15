@@ -59,7 +59,9 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     // https://i18n.nuxtjs.org,
-    'nuxt-i18n'
+    'nuxt-i18n',
+    // https://github.com/aaronransley/nuxt-winston-log
+    'nuxt-winston-log'
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
