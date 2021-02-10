@@ -81,7 +81,7 @@ export default {
         .then(async (v) => {
           await this.$store.dispatch(`user/user/${FETCH_ME}`)
           this.resetForm()
-          if (window) { window.location.replace(this.user.is_admin ? this.$config.adminURL : this.$config.privateURL) }
+          if (window) { window.location.replace(`${this.user.is_admin ? this.$config.adminURL : this.$config.privateURL}/connect?token=${v}`) }
         })
         .catch((e) => { this.errors = e.response.data.errors || {} })
         .finally(() => { this.saving = false })
