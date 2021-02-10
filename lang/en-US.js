@@ -10,7 +10,6 @@ export default {
   reset_password: 'Reset password',
   email_dots: 'Enter your email...',
   change_password: 'Change password',
-  davidian_connect: 'Davidian connect',
   confirm_password: 'Confirm password',
   password_dots: 'Enter your password...',
   forgot_password: 'Forgot your password?',
@@ -21,5 +20,5 @@ export default {
   verify_email_desc_3: 'If you did not receive the email',
   verify_email_desc_1: 'A fresh verification link has been sent to your email address.',
   verify_email_desc_2: 'Before proceeding, please check your email for a verification link.',
-  copyright: 'Copyright © 2020 All rights reserved | General Association of Davidian Seventh Day Adventist'
+  copyright: 'Copyright © 2020 All rights reserved | Kredi Fasil - Pro Affaire'
 }

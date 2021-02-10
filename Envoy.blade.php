@@ -1,4 +1,4 @@
-@servers(['remote' => 'davidian2', 'localhost' => '127.0.0.1'])
+@servers(['remote' => 'kredifasilauth', 'localhost' => '127.0.0.1'])
 
 @story('deploy')
     git_push
@@ -6,12 +6,12 @@
 @endstory
 
 @task('git_push', ['on' => 'localhost'])
-    git push origin main
+    git push origin kredifasil
 @endtask
 
 @task('remote_deploy', ['on' => ['remote']])
-    cd ~/www/auth.davidiantoday.org
-    git pull origin main
+    cd /var/www/html/connect
+    git pull origin kredifasil
     yarn install
     yarn build
     pm2 start
