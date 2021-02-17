@@ -1,3 +1,25 @@
 export default {
-  home: 'Home'
+  send: 'Envoyer',
+  login: 'Connexion',
+  email: 'Email',
+  connect: 'Se connecter',
+  password: 'Mot de passe',
+  login_dots: 'Connexion...',
+  send_dots: 'Envoi...',
+  back_to_login: 'Retour à la connexion',
+  reset_password: 'Réinitialiser le mot de passe',
+  email_dots: 'Entrez votre e-mail...',
+  change_password: 'Changer le mot de passe',
+  davidian_connect: 'Davidian connect',
+  confirm_password: 'Confirmer le mot de passe',
+  password_dots: 'Entrez votre mot de passe...',
+  forgot_password: 'Oublié votre mot de passe ?',
+  verify_email: 'Vérifiez votre adresse e-mail',
+  send_reset_link: 'Envoyer le lien de réinitialisation du mot de passe',
+  confirm_password_dots: 'Confirmez votre mot de passe...',
+  click_request_another: 'cliquez ici pour en demander une autre',
+  verify_email_desc_3: 'Si vous n\'avez pas reçu le courriel',
+  verify_email_desc_1: 'Un nouveau lien de vérification a été envoyé à votre e-mail',
+  verify_email_desc_2: 'Avant de poursuivre, veuillez vérifier votre e-mail pour un lien de vérification.',
+  copyright: 'Copyright © 2021 Tous droits réservés | General Association of Davidian Seventh Day Adventist'
 }

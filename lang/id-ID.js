@@ -1,3 +1,25 @@
 export default {
-  home: 'Home'
+  send: 'Kirim',
+  login: 'Login',
+  email: 'Email',
+  connect: 'Connect',
+  password: 'Kata sandi',
+  login_dots: 'Login...',
+  send_dots: 'Mengirim...',
+  back_to_login: 'Kembali ke login',
+  reset_password: 'Setel ulang kata sandi',
+  email_dots: 'Masukkan email saudara...',
+  change_password: 'Ubah password',
+  davidian_connect: 'Davidian connect',
+  confirm_password: 'konfirmasi kata sandi',
+  password_dots: 'Masukkan kata sandi saudara...',
+  forgot_password: 'Lupa kata sandi saudara?',
+  verify_email: 'Verifikasi email saudara',
+  send_reset_link: 'Kirimkan penyetelan ulang kata sandi',
+  confirm_password_dots: 'Konfirmasi kata sandi saudara...',
+  click_request_another: 'klick disini untuk minta dikirim sekali lagi',
+  verify_email_desc_3: 'Jika saudara tidak menerima email',
+  verify_email_desc_1: 'Sebuah tautan verifikasi baru telah dikirim ke alamat email saudara.',
+  verify_email_desc_2: 'Sebelum melanjutkan, silakan periksa email saudara untuk verifikasi tautan yang dikirim.',
+  copyright: 'Copyright © 2021 All rights reserved | General Association of Davidian Seventh Day Adventist'
 }

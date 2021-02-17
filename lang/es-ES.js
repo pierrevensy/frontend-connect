@@ -1,3 +1,25 @@
 export default {
-  home: 'Home'
+  send: 'Enviar',
+  login: 'Iniciar sesión',
+  email: 'Correo Electrónico',
+  connect: 'Conectar',
+  password: 'Contraseña',
+  login_dots: 'Inicio de sesión...',
+  send_dots: 'Enviando...',
+  back_to_login: 'Volver al inicio de sesión',
+  reset_password: 'Restablecer contraseña',
+  email_dots: 'Escriba su correo electrónico...',
+  change_password: 'Cambiar la contraseña',
+  davidian_connect: 'Conexión davidiana',
+  confirm_password: 'Confirmar contraseña',
+  password_dots: 'Introduce tu contraseña...',
+  forgot_password: '¿Olvidaste tu contraseña?',
+  verify_email: 'Verifique su dirección de correo electrónico',
+  send_reset_link: 'Enviar enlace de restablecimiento de contraseña',
+  confirm_password_dots: 'Confirma tu contraseña...',
+  click_request_another: 'pulse aquí para solicitar otra',
+  verify_email_desc_3: 'Si no ha recibido el correo electrónico',
+  verify_email_desc_1: 'Se ha enviado un nuevo enlace de verificación a su dirección de correo electrónico.',
+  verify_email_desc_2: 'Antes de continuar, compruebe su correo electrónico para ver si hay un enlace de verificación.',
+  copyright: 'Copyright © 2021 Todos los derechos reservados | Asociación General de los Davidianos Adventistas del Séptimo Día'
 }
