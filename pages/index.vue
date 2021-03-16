@@ -6,9 +6,9 @@
 
 <script>
 export default {
-  mounted () {
-    this.$axios.get('/sanctum/csrf-cookie').then(() => {})
-  },
+  // mounted () {
+  //   // this.$axios.get('/sanctum/csrf-cookie').then(() => {})
+  // },
   head () {
     return {
       title: this.$t('login'),

@@ -1,6 +1,6 @@
 export default function ({ store, app: { $axios, $cookies }, redirect, error }) {
   // Default value
-  $axios.defaults.withCredentials = true
+  // $axios.defaults.withCredentials = true
   $axios.setToken($cookies.get('token', { parseJSON: false }), 'Bearer')
 
   // Error handler
