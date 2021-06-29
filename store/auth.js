@@ -2,7 +2,7 @@ import {
   SET_AUTHENTICATED
 } from './mutations.type'
 import {
-  LOGIN
+  LOGIN, LOGOUT
 } from './actions.type'
 
 // Initial state
@@ -21,6 +21,12 @@ export const actions = {
     context.commit(SET_AUTHENTICATED, true)
     this.$cookies.set('token', res, { sameSite: 'Lax', path: '/', domain: this.$config.domainName })
     return res
+  },
+
+  [LOGOUT] ({ commit }) {
+    this.$cookies.remove('token')
+    this.$axios.setToken(null, 'Bearer')
+    commit(SET_AUTHENTICATED, false)
   }
 }
 
