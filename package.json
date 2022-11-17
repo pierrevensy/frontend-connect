@@ -19,7 +19,7 @@
     "cookie-universal-nuxt": "^2.1.4",
     "core-js": "^3.6.5",
     "lodash": "^4.17.20",
-    "nuxt": "^2.14.6",
+    "nuxt": "^3.0.0",
     "nuxt-i18n": "^6.15.4",
     "nuxt-winston-log": "^1.2.0",
     "vee-validate": "^3.4.5",
