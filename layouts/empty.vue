@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <v-content class="mb-2">
+    <v-main class="mb-2">
       <nuxt />
-    </v-content>
+    </v-main>
   </v-app>
 </template>

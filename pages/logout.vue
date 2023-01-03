@@ -19,11 +19,10 @@ import { LOGOUT } from '~/store/actions.type'
 export default {
   mounted () {
     this.$store.dispatch(`auth/${LOGOUT}`).finally(() => {
-      console.log('logged out')
       if (window) { window.location.replace(this.$config.baseURL) }
     })
   },
-  layout: 'empty'
-  // middleware: ['auth']
+  layout: 'empty',
+  middleware: ['auth']
 }
 </script>
